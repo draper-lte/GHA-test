@@ -39,7 +39,6 @@ resource "aws_s3_bucket" "website" {
   bucket        = var.website_name
   acl           = "public-read"
   tags          = var.tags
-  region        = var.region
   force_destroy = var.force_destroy
 
   website {
